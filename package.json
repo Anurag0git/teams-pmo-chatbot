@@ -1,0 +1,29 @@
+{
+  "name": "teams-pmo-chatbot",
+  "version": "1.0.0",
+  "description": "A configurable Teams chatbot for PMO task automation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "teams",
+    "chatbot",
+    "pmo",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "^4.23.2",
+    "botbuilder-core": "^4.23.2",
+    "dotenv": "^16.5.0",
+    "restify": "^11.1.0"
+
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

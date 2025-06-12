@@ -1,0 +1,62 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "your-app-id-here",
+  "packageName": "com.yourcompany.pmochatbot",
+  "developer": {
+    "name": "Your Company",
+    "websiteUrl": "https://yourcompany.com",
+    "privacyUrl": "https://yourcompany.com/privacy",
+    "termsOfUseUrl": "https://yourcompany.com/terms"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "name": {
+    "short": "PMO Assistant",
+    "full": "PMO Team Management Assistant"
+  },
+  "description": {
+    "short": "Automate PMO tasks like reminders, training tracking, and team synchronization",
+    "full": "A comprehensive chatbot for Project Management Office teams to handle routine tasks including sending reminders with acknowledgment tracking, managing training schedules, and synchronizing with external systems like MYTE."
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "your-app-id-here",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupchat"],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Show available commands"
+            },
+            {
+              "title": "Status",
+              "description": "Show team dashboard"
+            },
+            {
+              "title": "Remind",
+              "description": "Create a team reminder"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "yourcompany.com"
+  ]
+}
